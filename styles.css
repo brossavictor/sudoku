@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+td,
+tr {
+	border: 1px solid gray;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#page {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+
+	flex-wrap: wrap;
+
+	height: 100vh;
+}
+
+.sudoku {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#challenge {
+	height: 360px;
+	width: 360px;
+}
+
+#square {
+	height: 120px;
+	width: 120px;
+}
