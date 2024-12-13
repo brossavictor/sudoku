@@ -3,42 +3,71 @@
 	padding: 0;
 }
 
-table {
-	border-collapse: collapse;
-	border: 1px solid black;
-}
+:root {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
 
-td,
-tr {
-	border: 1px solid gray;
-	text-align: center;
-	border-collapse: collapse;
+	--background-default: #f5f4f0;
+	--border-primary: #d9d9d9;
+
+	--text-primary: #1b1b1b;
+	--text-secondary: #333333;
+	--text-tertiary: #696969;
+	--text-headline: #e1624f;
+
+	--accent-blue: #0c15a7;
+	--accent-orange: #e95e10;
+	--accent-pink: #e5245e;
+	--accent-purple: #591b98;
 }
 
 #page {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 
+	flex-direction: column;
+
+	width: 30rem;
+	margin: 20vh auto;
+
+	border-radius: 2rem;
+
+	background-color: var(--background-default);
+}
+
+h1,
+p {
+	margin: 1rem auto;
+}
+
+.sudoku,
+.grid,
+.cell {
+	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 
-	height: 100vh;
+	align-items: center;
+	justify-content: center;
+
+	border: 1px solid black;
 }
 
 .sudoku {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	margin: auto auto 2rem;
+
+	width: 366px;
+	height: 366px;
 }
 
-#challenge {
-	height: 360px;
-	width: 360px;
-}
-
-#square {
-	height: 120px;
+.grid {
 	width: 120px;
+	height: 120px;
+}
+
+.cell {
+	width: 38px;
+	height: 38px;
 }
